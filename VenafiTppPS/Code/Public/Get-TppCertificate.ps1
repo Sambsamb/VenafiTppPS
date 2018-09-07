@@ -4,14 +4,14 @@ function Get-TppCertificate {
         [Parameter(Mandatory, ValueFromPipelineByPropertyName)]
         [ValidateNotNullOrEmpty()]
         [Alias('CertificateDN')]
-        [String]$Path,
+        [String] $Path,
 
         [Parameter()]
         [ValidateSet("Base64", "Base64 (PKCS #8)", "DER", "PKCS #7", "PKCS #12")]
-        [String]$Format = "PKCS #7",
+        [String] $Format = "PKCS #7",
 
-        # [Parameter()]
-        # [Security.SecureString]$SecurePassword,
+        [Parameter()]
+        [Security.SecureString] $SecurePassword,
 
         # [Parameter()]
         # [Bool]$IncludePrivateKey = $true,
@@ -25,7 +25,7 @@ function Get-TppCertificate {
                     Throw "Output path $_ does not exist"
                 }
             })]
-        [String]$OutPath,
+        [String] $OutPath,
 
         [Parameter()]
         [TppSession] $TppSession = $Script:TppSession
