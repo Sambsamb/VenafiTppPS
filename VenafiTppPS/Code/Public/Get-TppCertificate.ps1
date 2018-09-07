@@ -41,7 +41,7 @@ function Get-TppCertificate {
             CertificateDN = $Path
             Format        = $Format
             # IncludePrivateKey = "true"
-            # Password          = ConvertTo-InsecureString $SecurePassword
+            # Password          = $SecurePassword # this needs to be converted to plain text before sending
         }
     }
 
