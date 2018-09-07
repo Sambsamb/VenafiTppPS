@@ -33,6 +33,8 @@ function Get-TppCertificate {
 
     $TppSession.Validate()
 
+    $plainTextPassword = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($SecurePassword))
+
     $params = @{
         TppSession = $TppSession
         Method     = 'Post'
@@ -40,8 +42,8 @@ function Get-TppCertificate {
         Body       = @{
             CertificateDN = $Path
             Format        = $Format
-            # IncludePrivateKey = "true"
-            # Password          = $SecurePassword # this needs to be converted to plain text before sending
+            # IncludePrivateKey = $IncludePrivateKey
+            # Password          = $plainTextPassword
         }
     }
 
