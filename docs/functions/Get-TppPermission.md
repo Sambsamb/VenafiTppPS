@@ -35,7 +35,7 @@ Get-TppObject -Path '\VED\Policy\My folder' | Get-TppPermission
 
 Guid                             PrefixedUniversalId
 ----                                   -----------
-{1234abcd-g6g6-h7h7-faaf-f50cd6610cba} {AD+mydomain.com:1234567890olikujyhtgrfedwsqa, AD+mydomain.com:azsxdcfvgbhnjmlk09877654321}
+<!-- {1234abcd-g6g6-h7h7-faaf-f50cd6610cba} {AD+mydomain.com:1234567890olikujyhtgrfedwsqa, AD+mydomain.com:azsxdcfvgbhnjmlk09877654321} -->
 
 Get users/groups permissioned to a policy folder
 
@@ -46,8 +46,8 @@ Get-TppObject -Path '\VED\Policy\My folder' | Get-TppPermission -Attribute 'Give
 
 Guid                             PrefixedUniversalId                              Attribute
 ----------                             -------------------                              ---------
-{1234abcd-g6g6-h7h7-faaf-f50cd6610cba} AD+mydomain.com:1234567890olikujyhtgrfedwsqa {@{Name=Given Name; Value=Greg}, @{Name=Surname; Value=Brownstein}}
-{1234abcd-g6g6-h7h7-faaf-f50cd6610cba} AD+mydomain.com:azsxdcfvgbhnjmlk09877654321 {@{Name=Given Name; Value=Greg}, @{Name=Surname; Value=Brownstein}}
+<!-- {1234abcd-g6g6-h7h7-faaf-f50cd6610cba} AD+mydomain.com:1234567890olikujyhtgrfedwsqa {@{Name=Given Name; Value=Greg}, @{Name=Surname; Value=Brownstein}}
+{1234abcd-g6g6-h7h7-faaf-f50cd6610cba} AD+mydomain.com:azsxdcfvgbhnjmlk09877654321 {@{Name=Given Name; Value=Greg}, @{Name=Surname; Value=Brownstein}} -->
 
 Get users/groups permissioned to a policy folder including identity attributes for those users/groups
 
@@ -56,7 +56,7 @@ Get users/groups permissioned to a policy folder including identity attributes f
 Get-TppObject -Path '\VED\Policy\My folder' | Get-TppPermission -Effective
 ```
 
-Guid           : {1234abcd-g6g6-h7h7-faaf-f50cd6610cba}
+<!-- Guid           : {1234abcd-g6g6-h7h7-faaf-f50cd6610cba}
 PrefixedUniversalId  : AD+mydomain.com:1234567890olikujyhtgrfedwsqa
 EffectivePermissions : @{IsAssociateAllowed=False; IsCreateAllowed=True; IsDeleteAllowed=True; IsManagePermissionsAllowed=True; IsPolicyWriteAllowed=True;
                        IsPrivateKeyReadAllowed=True; IsPrivateKeyWriteAllowed=True; IsReadAllowed=True; IsRenameAllowed=True; IsRevokeAllowed=False; IsViewAllowed=True;
@@ -66,7 +66,7 @@ Guid           : {1234abcd-g6g6-h7h7-faaf-f50cd6610cba}
 PrefixedUniversalId  : AD+mydomain.com:azsxdcfvgbhnjmlk09877654321
 EffectivePermissions : @{IsAssociateAllowed=False; IsCreateAllowed=False; IsDeleteAllowed=False; IsManagePermissionsAllowed=False; IsPolicyWriteAllowed=True;
                        IsPrivateKeyReadAllowed=False; IsPrivateKeyWriteAllowed=False; IsReadAllowed=True; IsRenameAllowed=False; IsRevokeAllowed=True; IsViewAllowed=False;
-                       IsWriteAllowed=True}
+                       IsWriteAllowed=True} -->
 
 Get effective permissions for users/groups on a specific policy folder
 
