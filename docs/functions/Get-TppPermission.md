@@ -35,7 +35,7 @@ Get-TppObject -Path '\VED\Policy\My folder' | Get-TppPermission
 
 Guid                             PrefixedUniversalId
 ----                                   -----------
-<!-- {1234abcd-g6g6-h7h7-faaf-f50cd6610cba} {AD+mydomain.com:1234567890olikujyhtgrfedwsqa, AD+mydomain.com:azsxdcfvgbhnjmlk09877654321} -->
+{1234abcd-g6g6-h7h7-faaf-f50cd6610cba} {AD+mydomain.com:1234567890olikujyhtgrfedwsqa, AD+mydomain.com:azsxdcfvgbhnjmlk09877654321}
 
 Get users/groups permissioned to a policy folder
 
