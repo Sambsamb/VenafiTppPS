@@ -46,7 +46,7 @@ Get-TppObject -Path '\VED\Policy\My folder' | Get-TppPermission -Attribute 'Give
 
 Guid                             PrefixedUniversalId                              Attribute
 ----------                             -------------------                              ---------
-{@{
+{@{Name=Given Name; Value=Greg}, @{Name=Surname; Value=Brownstein}}
 <!-- {1234abcd-g6g6-h7h7-faaf-f50cd6610cba} AD+mydomain.com:1234567890olikujyhtgrfedwsqa {@{Name=Given Name; Value=Greg}, @{Name=Surname; Value=Brownstein}}
 {1234abcd-g6g6-h7h7-faaf-f50cd6610cba} AD+mydomain.com:azsxdcfvgbhnjmlk09877654321 {@{Name=Given Name; Value=Greg}, @{Name=Surname; Value=Brownstein}} -->
 
